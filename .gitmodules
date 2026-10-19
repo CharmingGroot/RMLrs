@@ -1,0 +1,27 @@
+[submodule "conformance/suites/rml-core"]
+	path = conformance/suites/rml-core
+	url = https://github.com/kg-construct/rml-core.git
+[submodule "conformance/suites/rml-io"]
+	path = conformance/suites/rml-io
+	url = https://github.com/kg-construct/rml-io.git
+[submodule "conformance/suites/rml-io-registry"]
+	path = conformance/suites/rml-io-registry
+	url = https://github.com/kg-construct/rml-io-registry.git
+[submodule "conformance/suites/rml-fnml"]
+	path = conformance/suites/rml-fnml
+	url = https://github.com/kg-construct/rml-fnml.git
+[submodule "conformance/suites/rml-cc"]
+	path = conformance/suites/rml-cc
+	url = https://github.com/kg-construct/rml-cc.git
+[submodule "conformance/suites/rml-lv"]
+	path = conformance/suites/rml-lv
+	url = https://github.com/kg-construct/rml-lv.git
+[submodule "conformance/suites/rml-star"]
+	path = conformance/suites/rml-star
+	url = https://github.com/kg-construct/rml-star.git
+[submodule "conformance/suites/rml-test-cases"]
+	path = conformance/suites/rml-test-cases
+	url = https://github.com/RMLio/rml-test-cases.git
+[submodule "conformance/suites/r2rml"]
+	path = conformance/suites/r2rml
+	url = https://github.com/kg-construct/r2rml-test-cases-support.git

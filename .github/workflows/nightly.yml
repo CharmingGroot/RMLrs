@@ -1,0 +1,26 @@
+name: Nightly
+
+on:
+  schedule:
+    - cron: "0 18 * * *" # 18:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  conformance-all:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          submodules: true
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      # Every suite, SQL cases included: PostgreSQL, MySQL and SQL Server run in containers.
+      - run: cargo run --release -p rmlrs-conformance -- --databases --check conformance/baseline.csv
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: conformance-results-nightly
+          path: conformance/results/

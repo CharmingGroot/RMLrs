@@ -1,0 +1,36 @@
+# cargo-deny: licenses, advisories, bans and sources.
+[graph]
+all-features = true
+
+[advisories]
+version = 2
+yanked = "deny"
+# Unmaintained (not vulnerable) crates deep in the XPath 3.1 stack of the
+# optional `xml` feature (ADR 0007). Revisit when xee-xpath updates them.
+ignore = [
+  { id = "RUSTSEC-2022-0081", reason = "json 0.12, used by xee-interpreter (feature xml); unmaintained, no known vulnerability" },
+  { id = "RUSTSEC-2024-0370", reason = "proc-macro-error, build-time only via genawaiter in xot (feature xml); unmaintained, no known vulnerability" },
+]
+
+[licenses]
+version = 2
+confidence-threshold = 0.9
+allow = [
+  "Apache-2.0",
+  "Apache-2.0 WITH LLVM-exception",
+  "MIT",
+  "BSD-2-Clause",
+  "BSD-3-Clause",
+  "ISC",
+  "Unicode-3.0",
+  "Zlib",
+]
+
+[bans]
+multiple-versions = "warn"
+wildcards = "deny"
+allow-wildcard-paths = true
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"

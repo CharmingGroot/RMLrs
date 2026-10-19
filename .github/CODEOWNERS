@@ -1,0 +1,7 @@
+# Request maintainer review for changes to contribution policy and CI.
+/CONTRIBUTING.md @CharmingGroot
+/.github/CODEOWNERS @CharmingGroot
+/.github/workflows/ @CharmingGroot
+/.github/pull_request_template.md @CharmingGroot
+/AGENTS.md @CharmingGroot
+/CLAUDE.md @CharmingGroot

@@ -1,0 +1,50 @@
+RMLrs
+Copyright 2026 Ho Geun Choi and RMLrs contributors
+
+This product is licensed under the Apache License, Version 2.0.
+
+Third-party code included in this repository is listed below with its
+origin and license.
+
+-------------------------------------------------------------------------------
+bench/krown/rmlrs.py
+
+Based on execution-framework/bench_executor/morphkgc.py from KROWN
+(https://github.com/kg-construct/KROWN).
+
+MIT License
+
+Copyright (c) 2022-2024 Dylan Van Assche
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-------------------------------------------------------------------------------
+
+The RML conformance test suites used for testing are referenced as git
+submodules, not copied into this repository's tree. Their contents are not
+covered by RMLrs's Apache-2.0 license. Check each upstream repository and
+file's terms before redistributing a checkout with initialized submodules.
+
+At the pinned revisions, the rml-io-registry and rml-lv submodules do not
+have a repository-wide LICENSE file. Some files state their own terms, but
+this does not establish terms for every test case. Their licensing should be
+clarified upstream before redistributing those test suites. The submodules
+come from the W3C KG-Construct Community Group repositories
+(https://github.com/kg-construct), the old RML test cases
+(https://github.com/RMLio/rml-test-cases), and the W3C R2RML test cases as
+packaged in https://github.com/kg-construct/r2rml-test-cases-support.

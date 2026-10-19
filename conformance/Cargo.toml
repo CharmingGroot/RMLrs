@@ -1,0 +1,28 @@
+[package]
+name = "rmlrs-conformance"
+description = "Runs the KG-Construct RML test suites against RMLrs"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[dependencies]
+rmlrs = { workspace = true, features = ["compression", "xml", "fnml", "postgres", "mysql", "mssql"] }
+serde_json.workspace = true
+clap.workspace = true
+flate2.workspace = true
+# Tokenises the RDF/XML of target outputs (already a dependency of rmlrs-source).
+xmlparser.workspace = true
+lzma-rust2.workspace = true
+tar.workspace = true
+zip.workspace = true
+postgres = "0.19"
+mysql = { version = "28.0.3", default-features = false, features = ["minimal"] }
+tiberius = { version = "0.13", default-features = false, features = ["tds73", "rustls"] }
+tokio = { version = "1", default-features = false, features = ["rt", "net"] }
+tokio-util = { version = "0.7", default-features = false, features = ["compat"] }
+
+[lints]
+workspace = true

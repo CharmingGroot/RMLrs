@@ -1,0 +1,16 @@
+[package]
+name = "rmlrs-parser"
+description = "Turtle, N-Quads and RML mapping parsers for RMLrs"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[dependencies]
+rmlrs-model.workspace = true
+rmlrs-term.workspace = true
+
+[lints]
+workspace = true

@@ -1,0 +1,21 @@
+/target
+/conformance/results/
+
+# Local and editor files
+.DS_Store
+*.local.md
+.idea/
+.vscode/
+*.swp
+
+# Personal coding-agent instructions and state; shared rules live in CONTRIBUTING.md.
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+.cursorrules
+.claude/
+.codex/
+.cursor/
+.github/copilot-instructions.md
+.github/instructions/
+.github/agents/

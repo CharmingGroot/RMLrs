@@ -1,0 +1,8 @@
+# Build context for bench/krown/Dockerfile: sources only.
+target
+.git
+.*
+*.local.md
+conformance/suites
+conformance/results
+bindings/wasm/pkg

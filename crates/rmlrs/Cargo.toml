@@ -1,0 +1,31 @@
+[package]
+name = "rmlrs"
+description = "A Rust engine for RML, the RDF Mapping Language"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+readme = "../../README.md"
+publish.workspace = true
+
+[dependencies]
+rmlrs-model.workspace = true
+rmlrs-parser.workspace = true
+rmlrs-engine.workspace = true
+rmlrs-writer.workspace = true
+
+[features]
+xml = ["rmlrs-engine/xml"]
+fnml = ["rmlrs-engine/fnml"]
+compression = ["rmlrs-engine/compression", "rmlrs-writer/compression"]
+postgres = ["rmlrs-engine/postgres"]
+mysql = ["rmlrs-engine/mysql"]
+mssql = ["rmlrs-engine/mssql"]
+http = ["rmlrs-engine/http"]
+
+[lints]
+workspace = true

@@ -1,0 +1,52 @@
+[workspace]
+resolver = "3"
+members = ["crates/*", "conformance", "bindings/python", "bindings/wasm"]
+
+[workspace.package]
+version = "0.0.0"
+edition = "2024"
+rust-version = "1.88"
+license = "Apache-2.0"
+repository = "https://github.com/CharmingGroot/RMLrs"
+homepage = "https://github.com/CharmingGroot/RMLrs"
+keywords = ["rml", "rdf", "knowledge-graph", "r2rml", "semantic-web"]
+categories = ["command-line-utilities", "parser-implementations", "encoding"]
+publish = false
+
+[workspace.dependencies]
+rmlrs = { path = "crates/rmlrs" }
+rmlrs-model = { path = "crates/rmlrs-model" }
+rmlrs-parser = { path = "crates/rmlrs-parser" }
+rmlrs-term = { path = "crates/rmlrs-term" }
+rmlrs-source = { path = "crates/rmlrs-source" }
+rmlrs-engine = { path = "crates/rmlrs-engine" }
+rmlrs-writer = { path = "crates/rmlrs-writer" }
+
+# JSON numbers keep their source text, so natural datatypes see "10" and not 10.0.
+serde_json = { version = "1.0.150", features = ["arbitrary_precision", "preserve_order"] }
+percent-encoding = "2.3"
+thiserror = "2.0"
+clap = { version = "4.6", features = ["derive"] }
+
+# RML-IO compression (feature "compression"); all pure Rust, so no C toolchain.
+flate2 = "1.1"
+zip = { version = "9.0", default-features = false, features = ["deflate-flate2"] }
+tar = { version = "0.4", default-features = false }
+lzma-rust2 = { version = "0.22", default-features = false, features = ["std", "encoder", "xz"] }
+
+# XML sources with XPath 3.1 (feature "xml").
+xee-xpath = "0.1.5"
+xot = "0.31"
+# Cuts XML documents into the iterated elements (already used by xot).
+xmlparser = "0.13"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+missing_debug_implementations = "warn"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
