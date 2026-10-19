@@ -1,5 +1,7 @@
 # Code of Conduct
 
+[English](CODE_OF_CONDUCT.md) | [한국어](CODE_OF_CONDUCT.ko.md)
+
 RMLrs follows the [Contributor Covenant, version 2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
 
 In short: be welcoming, be respectful of differing views and experience,

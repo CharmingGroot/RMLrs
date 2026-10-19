@@ -1,5 +1,7 @@
 # Contributing to RMLrs
 
+[English](CONTRIBUTING.md) | [한국어](CONTRIBUTING.ko.md)
+
 Thanks for your interest. Bug reports, failing mappings, test cases,
 documentation and code are all welcome. This document explains how changes
 get into RMLrs.
@@ -103,7 +105,8 @@ RMLRS_TEST_POSTGRES=jdbc:postgresql://127.0.0.1:55432/postgres \
   and is not a pull request gate.
 - **Documentation follows behaviour.** If the change is visible to users,
   update [docs/usage.md](docs/usage.md), the README tables or
-  [CHANGELOG.md](CHANGELOG.md) (under "Unreleased").
+  [CHANGELOG.md](CHANGELOG.md) (under "Unreleased"). Update an available
+  Korean translation of the affected document too.
 
 ### When a test case looks wrong
 

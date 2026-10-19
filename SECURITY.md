@@ -1,8 +1,11 @@
 # Security Policy
 
+[English](SECURITY.md) | [한국어](SECURITY.ko.md)
+
 ## Supported versions
 
-RMLrs has not had a release yet. Security fixes go to the `main` branch.
+The first GitHub pre-release is `v0.1.0-alpha.1`. Security fixes go to the
+`main` branch; pre-release APIs and behavior may change.
 
 ## Reporting a vulnerability
 
