@@ -6,6 +6,9 @@ updates:
       interval: monthly
     open-pull-requests-limit: 5
     groups:
+      # pyo3 and pyo3-build-config must move together.
+      pyo3:
+        patterns: ["pyo3*"]
       minor-and-patch:
         update-types: [minor, patch]
   - package-ecosystem: github-actions
