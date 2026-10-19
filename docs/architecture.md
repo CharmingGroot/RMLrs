@@ -1,5 +1,7 @@
 # Architecture
 
+[English](architecture.md) | [한국어](architecture.ko.md)
+
 ## Crates
 
 ```text

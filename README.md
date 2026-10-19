@@ -1,5 +1,7 @@
 # RMLrs
 
+[English](README.md) | [한국어](README.ko.md)
+
 [![CI](https://github.com/CharmingGroot/RMLrs/actions/workflows/ci.yml/badge.svg)](https://github.com/CharmingGroot/RMLrs/actions/workflows/ci.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![MSRV 1.88](https://img.shields.io/badge/rustc-1.88+-orange.svg)](Cargo.toml)
@@ -16,11 +18,13 @@ and give the same output as the command line on all 76 RML-Core cases.
 
 ## Pre-release status
 
-**RMLrs is a pre-release project (version 0.0.0).** There is no tagged release
-or published crate, wheel, WebAssembly package or binary yet. Build it from
-source using the instructions below. Public APIs and supported features may
-change before the first release. Conformance and performance figures in this
-README come from this repository's own runner and benchmarks.
+**RMLrs is a pre-release project.** The first GitHub pre-release is
+[`v0.1.0-alpha.1`](https://github.com/CharmingGroot/RMLrs/releases/tag/v0.1.0-alpha.1).
+The Cargo workspace still reports version `0.0.0`; no crate, wheel,
+WebAssembly package or binary has been published yet. Build it from source
+using the instructions below. Public APIs and supported features may change
+before a stable release. Conformance and performance figures in this README
+come from this repository's own runner and benchmarks.
 
 ## Contents
 
@@ -160,10 +164,10 @@ Mapping features outside the RML specifications are out of scope
 
 ## Install
 
-There is no release yet. With a Rust toolchain (1.88 or later):
+No prebuilt package has been published yet. With a Rust toolchain (1.88 or later):
 
 ```bash
-cargo install --git https://github.com/CharmingGroot/RMLrs rmlrs-cli
+cargo install --git https://github.com/CharmingGroot/RMLrs --tag v0.1.0-alpha.1 rmlrs-cli
 ```
 
 This installs the `rmlrs` command with every source format and database
@@ -240,7 +244,7 @@ measured so far and how to reproduce them: [docs/benchmarks.md](docs/benchmarks.
 - [docs/usage.md](docs/usage.md): command line, library, bindings, databases, targets, functions
 - [docs/conformance.md](docs/conformance.md): test suites, the runner, known issues
 - [docs/benchmarks.md](docs/benchmarks.md): how performance is measured, and results
-- [docs/architecture.md](docs/architecture.md): crates and how a mapping runs
+- [docs/architecture.md](docs/architecture.md) ([한국어](docs/architecture.ko.md)): crates and how a mapping runs
 - [docs/provenance.md](docs/provenance.md): which specification each crate implements, and what it relies on
 - [PHILOSOPHY.md](PHILOSOPHY.md): scope, and the rule for new features
 - [ROADMAP.md](ROADMAP.md): milestones and what is next
@@ -250,7 +254,7 @@ measured so far and how to reproduce them: [docs/benchmarks.md](docs/benchmarks.
 ## Contributing
 
 Bug reports, test cases and pull requests are welcome. Read
-[CONTRIBUTING.md](CONTRIBUTING.md) first: changes need tests, keep the
+[CONTRIBUTING.md](CONTRIBUTING.md) ([한국어](CONTRIBUTING.ko.md)) first: changes need tests, keep the
 conformance baseline green, and commits are signed off (DCO). Please follow
 the [Code of Conduct](CODE_OF_CONDUCT.md). Security issues: [SECURITY.md](SECURITY.md).
 

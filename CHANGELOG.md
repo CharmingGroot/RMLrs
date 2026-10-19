@@ -2,12 +2,19 @@
 
 All notable changes to RMLrs are listed here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow
-[Semantic Versioning](https://semver.org/) once releases start
+[Semantic Versioning](https://semver.org/) for releases
 ([RELEASING.md](RELEASING.md)).
 
 ## Unreleased
 
-Everything so far; there has been no release yet.
+### Documentation
+
+- Add Korean translations of the README, contribution guide, architecture,
+  security policy and code of conduct.
+
+## [0.1.0-alpha.1] - 2026-10-19
+
+Initial GitHub source pre-release. No package has been published yet.
 
 ### Mapping language
 

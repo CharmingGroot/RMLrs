@@ -1,7 +1,8 @@
 # Roadmap
 
-**Pre-release (version 0.0.0; October 2026).** There is no tagged release or
-published package yet. M0, M1, M1.5, M2, M4, M5 and M6 are done; M3
+**Pre-release (Cargo version 0.0.0; October 2026).** The first GitHub
+pre-release is `v0.1.0-alpha.1`; no package has been published yet. M0, M1,
+M1.5, M2, M4, M5 and M6 are done; M3
 (performance) has published database numbers, and the file-based scenarios
 are being measured again. What remains unsupported is listed in the
 [README](README.md#features): Kafka and MQTT streams, SPARQL over RDF files,
